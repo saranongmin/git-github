@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2>JavascriptForms</h2>
+
+<script>
+function myFunction(){
+var x = document.forms['myform']['fname'].value;
+if(x=="")
+alert("name must be filled out");
+return false;
+
+}
+</script>
+</head>
+<body>
+<form name ="myform" action="action_page.php"
+onsubmit="return validateForm()" method="post">
+Name:
+<input type="text" name ="fname">
+Email:
+<input type="email" name="email">
+<input type="Submit" value ="submit">
+</form> 
+</body>
+</html>
