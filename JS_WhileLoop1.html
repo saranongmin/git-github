@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2/>Javascript Loops</h2>
+<p>Javascript Loops with break</p>
 <p id ="demo"></p>
 <script>
 var i=0;
 var text="";
-do{
-text += "<br> The NUmber is" +i;
-    i++;
+
+for (i=0;i<10;i++){
+if(i===3){break;}
+text+= "The NUmber is "+i +"<br>";
 }
-while (i<4);
+
 document.getElementById("demo").innerHTML = text;
 </script>
 </body>
