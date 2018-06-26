@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-<h2>JavascriptForms</h2>
-</head>
 <body>
-<form name ="myform" action="action_page.php"
-onsubmit="return validateForm()" method="post">
-Name:
-<input type="text" name ="fname" required>
-Email:
-<input type="email" name="email" required>
-<input type="Submit" value ="submit">
-</form> 
-<p>If you click submit, without filling out the text field,
-your browser will display an error message.</p>
+<h2>JavascriptForms with validate Number</h2>
+<p>Please input a number 1 to 10:</p>
+<input id ="numb">
+<button type ="button" onclick="myFunction()">submit</button>
+<p id ="demo"></p>
+<script>
+function myFunction(){
+var x,text;
+x = document.getElementById("numb").value;
+if(isNaN(x)|| x<1 || x>10){
+text = "Input not valid";
+}else
+{
+text="Input valid";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+</script>
 </body>
 </html>
