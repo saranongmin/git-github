@@ -1,0 +1,17 @@
+<html>
+<body>
+<h2>Javascript Functions</h2>
+<p id ="demo"></p>
+<script>
+var Object={
+firstname:"Jessica",
+lastname:"Sarah",
+fullname:function(){
+return this.firstname+ " "+ this.lastname;
+}
+}
+x=Object.fullname();
+document.getElementById("demo").innerHTML =x;
+</script>
+</body>
+</html>
